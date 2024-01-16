@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f6f6f6;
+        }
+        
+        h1 {
+            margin-block-start: 40px;
+            text-align: center;
+            color: #4CAF50; /* Green color for the header */
+        }
+        
+        .calculator {
+            border: 1px solid #4CAF50; /* Green border */
+            width: 350px;
+            height: 400px;
+            margin: 60px auto;
+            background-color: #f9f9f9; /* Light gray background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        .calculator h3 {
+            text-align: center;
+            margin-inline: 30px;
+            padding: 10px;
+            color: #4CAF50; /* Green color for the header text */
+        }
+        
+        .result {
+            border: 1px solid #ddd;
+            margin-inline: 41px;
+            padding: 10px;
+            text-align: end;
+            font-size: 24px;
+            width: 248px;
+            color: #333;
+            outline: none;
+        }
+        
+        .result::placeholder {
+            opacity: 0.6;
+        }
+        
+        .buttons1 {
+            margin: 10px auto;
+            width: 300px;
+            height: 300px;
+        }
+        
+        .buttons2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 8px;
+            justify-content: center;
+            align-content: center;
+            height: 280px;
+            margin: 10px;
+        }
+        
+        .button {
+            width: 61px;
+            height: 42px;
+            position: relative;
+            cursor: pointer;
+            background-color: #4CAF50; /* Green color for buttons */
+            border: 1px solid #4CAF50; /* Green border for buttons */
+            border-radius: 4px;
+            font-size: 16px;
+            color: #fff; /* White text for buttons */
+            outline: none;
+        }
+        
+        .button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Javascript Calculator</h1>
+    <div class="calculator">
+        <h3>Calculator</h3>
+        <input type="text" name="display" class="result" value="" placeholder="2*4">
+        <div class="buttons1">
+            <div class="buttons2">
+                <button class="button" id="button1">CE</button>
+                <button class="button" id="button2">C</button>
+                <button class="button" id="button3">X</button>
+                <button class="button" id="button4">/</button>
+                <button class="button" id="button5">9</button>
+                <button class="button" id="button6">7</button>
+                <button class="button" id="button7">6</button>
+                <button class="button" id="button8">*</button>
+                <button class="button" id="button9">5</button>
+                <button class="button" id="button10">4</button>
+                <button class="button" id="button11">3</button>
+                <button class="button" id="button12">+</button>
+                <button class="button" id="button13">2</button>
+                <button class="button" id="button14">1</button>
+                <button class="button" id="button15">0</button>
+                <button class="button" id="button16">-</button>
+                <button class="button" id="button17">.</button>
+                <button class="button" id="button18">%</button>
+                <button class="button" id="button19">**</button>
+                <button class="button" id="button20">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
